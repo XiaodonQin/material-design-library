@@ -38,4 +38,8 @@ public class ViewPagerWithIndicatorActivity
         return new ActionBarDefaultHandler(this);
     }
 
+    @Override
+    protected boolean enableActionBarShadow() {
+        return false;
+    }
 }

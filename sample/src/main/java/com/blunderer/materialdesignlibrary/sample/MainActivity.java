@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 
+import com.blunderer.materialdesignlibrary.activities.AActivity;
 import com.blunderer.materialdesignlibrary.handlers.ActionBarDefaultHandler;
 import com.blunderer.materialdesignlibrary.handlers.ActionBarHandler;
 import com.blunderer.materialdesignlibrary.sample.cardviews.CardViewNormalActivity;
@@ -32,7 +33,7 @@ import com.blunderer.materialdesignlibrary.sample.viewpagers.ViewPagerWithTabsEx
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends com.blunderer.materialdesignlibrary.activities.ListViewActivity {
+public class MainActivity extends com.blunderer.materialdesignlibrary.activities.ListViewActivity{
 
     @Override
     public ListAdapter getListAdapter() {
@@ -225,4 +226,8 @@ public class MainActivity extends com.blunderer.materialdesignlibrary.activities
         return objects;
     }
 
+    @Override
+    protected boolean enableActionBarShadow() {
+        return false;
+    }
 }

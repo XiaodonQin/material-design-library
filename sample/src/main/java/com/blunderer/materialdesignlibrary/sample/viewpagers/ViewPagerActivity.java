@@ -37,5 +37,5 @@ public class ViewPagerActivity
     protected ActionBarHandler getActionBarHandler() {
         return new ActionBarDefaultHandler(this);
     }
-
+    
 }

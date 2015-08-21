@@ -66,4 +66,8 @@ public class ListViewWithCustomLayoutActivity
         return new ActionBarDefaultHandler(this);
     }
 
+    @Override
+    protected boolean enableActionBarShadow() {
+        return false;
+    }
 }

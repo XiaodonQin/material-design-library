@@ -28,4 +28,8 @@ public class SearchBarActivity extends Activity {
         });
     }
 
+    @Override
+    protected boolean enableActionBarShadow() {
+        return false;
+    }
 }

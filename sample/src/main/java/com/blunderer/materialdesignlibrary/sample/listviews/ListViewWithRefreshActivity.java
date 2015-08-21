@@ -78,4 +78,8 @@ public class ListViewWithRefreshActivity
         return new ActionBarDefaultHandler(this);
     }
 
+    @Override
+    protected boolean enableActionBarShadow() {
+        return false;
+    }
 }

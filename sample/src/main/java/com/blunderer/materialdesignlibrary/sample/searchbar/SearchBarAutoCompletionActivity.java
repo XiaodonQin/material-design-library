@@ -37,8 +37,12 @@ public class SearchBarAutoCompletionActivity extends Activity {
 
         })
                 .enableAutoCompletion()
-                .setAutoCompletionItems(mItems)
+                .setAutoCompletionSuggestions(mItems)
                 .setAutoCompletionMode(ToolbarSearch.AutoCompletionMode.CONTAINS);
     }
 
+    @Override
+    protected boolean enableActionBarShadow() {
+        return false;
+    }
 }

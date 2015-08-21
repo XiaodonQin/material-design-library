@@ -41,4 +41,8 @@ public class ScrollViewWithRefreshActivity
         return new ActionBarDefaultHandler(this);
     }
 
+    @Override
+    protected boolean enableActionBarShadow() {
+        return false;
+    }
 }

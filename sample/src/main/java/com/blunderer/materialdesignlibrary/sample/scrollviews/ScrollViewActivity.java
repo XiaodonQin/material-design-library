@@ -2,6 +2,7 @@ package com.blunderer.materialdesignlibrary.sample.scrollviews;
 
 import com.blunderer.materialdesignlibrary.handlers.ActionBarDefaultHandler;
 import com.blunderer.materialdesignlibrary.handlers.ActionBarHandler;
+import com.blunderer.materialdesignlibrary.handlers.NavigationDrawerStyleHandler;
 import com.blunderer.materialdesignlibrary.sample.R;
 
 public class ScrollViewActivity
@@ -29,6 +30,11 @@ public class ScrollViewActivity
     @Override
     protected ActionBarHandler getActionBarHandler() {
         return new ActionBarDefaultHandler(this);
+    }
+
+    @Override
+    protected boolean enableActionBarShadow() {
+        return false;
     }
 
 }

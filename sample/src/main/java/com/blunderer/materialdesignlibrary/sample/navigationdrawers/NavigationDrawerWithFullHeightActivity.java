@@ -7,6 +7,7 @@ import com.blunderer.materialdesignlibrary.handlers.ActionBarHandler;
 import com.blunderer.materialdesignlibrary.handlers.NavigationDrawerAccountsHandler;
 import com.blunderer.materialdesignlibrary.handlers.NavigationDrawerAccountsMenuHandler;
 import com.blunderer.materialdesignlibrary.handlers.NavigationDrawerBottomHandler;
+import com.blunderer.materialdesignlibrary.handlers.NavigationDrawerStyleHandler;
 import com.blunderer.materialdesignlibrary.handlers.NavigationDrawerTopHandler;
 import com.blunderer.materialdesignlibrary.models.Account;
 import com.blunderer.materialdesignlibrary.sample.R;
@@ -73,4 +74,13 @@ public class NavigationDrawerWithFullHeightActivity
         return new ActionBarDefaultHandler(this);
     }
 
+    @Override
+    public NavigationDrawerStyleHandler getNavigationDrawerStyleHandler() {
+        return null;
+    }
+
+    @Override
+    protected boolean enableActionBarShadow() {
+        return false;
+    }
 }

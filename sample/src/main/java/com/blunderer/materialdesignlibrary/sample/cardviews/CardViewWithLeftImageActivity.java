@@ -17,4 +17,8 @@ public class CardViewWithLeftImageActivity
         return new ActionBarDefaultHandler(this);
     }
 
+    @Override
+    protected boolean enableActionBarShadow() {
+        return false;
+    }
 }
